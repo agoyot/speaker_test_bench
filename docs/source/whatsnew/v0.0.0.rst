@@ -1,0 +1,9 @@
+.. _whatsnew_101:
+
+What's new in 0.0.0 (Month XX, XXXX)
+--------------------------------------
+
+These are the changes in 0.0.0. See :ref:`whatsnew` for a full changelog.
+
+.. ---------------------------------------------------------------------------
+.. _whatsnew_101.enhancements:

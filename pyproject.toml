@@ -1,0 +1,47 @@
+# 1. BUILDING PYTHON PACKAGE -------------------------------------------------------------------------------------------
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ['setuptools>=65.0.0', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+# 2. LINTER & FORMATTING CONFIGURATION ---------------------------------------------------------------------------------
+# Formatting options to tune Black behavior (comply with Google style guidelines)
+# https://google.github.io/styleguide/pyguide.html
+[tool.black]
+line-length = 79
+target-version = ['py39', 'py310']
+preview = true
+
+# Pylint options
+#[tool.pylint.MASTER]
+#load-plugins = "perflint"
+
+# 3. COVERAGE CONFIGURATION --------------------------------------------------------------------------------------------
+# https://coverage.readthedocs.io/en/6.4.1/config.html
+[tool.coverage.run]
+dynamic_context = 'test_function'
+branch = true
+include = ['src/speaker_test_bench']
+source = ['.']
+omit = [
+    '*setup.py',
+    'src/speaker_test_bench/version.py',
+    '*tests*'
+]
+disable_warnings = ['include-ignored']
+
+[tool.coverage.html]
+directory = 'coverage'
+
+# 4. TEST CONFIGURATION ------------------------------------------------------------------------------------------------
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+    "integration",
+]
+filterwarnings = [
+    "ignore::UserWarning",
+]

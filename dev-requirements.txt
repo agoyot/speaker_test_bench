@@ -1,0 +1,42 @@
+# -- Python code formatter
+black
+autopep8
+docformatter
+
+# -- Coverage package
+coverage
+
+# -- Linters
+perflint
+pylint
+
+# -- Test packages
+pytest
+tox
+
+# -- Versioning
+pre-commit
+
+# -- Documentation and documentation plugins
+sphinx
+pydata-sphinx-theme
+# - Template for documentation
+jinja2
+# - Plot data inside documentation
+matplotlib
+# - Improve Sphinx structure
+sphinx-copybutton
+sphinx-panels
+sphinx-toggleprompt
+sphinx-togglebutton
+# - Notebook and interactive Python code in documentation
+nbsphinx
+ipython
+# - Add emojis
+sphinxemoji
+
+# - Data reports
+dataprep
+
+# - Data plots
+plotly

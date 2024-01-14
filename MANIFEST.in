@@ -1,0 +1,1 @@
+recursive-include src/speaker_test_bench/conf *
