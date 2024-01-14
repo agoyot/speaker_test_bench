@@ -1,5 +1,4 @@
-# Legengs from PEP440 for version specifiers
+# Legends from PEP440 for version specifiers
 # https://peps.python.org/pep-0440/#version-specifiers
-# scipy~=1.8.0
 smbus==1.1.post2
 numpy~=1.26.3

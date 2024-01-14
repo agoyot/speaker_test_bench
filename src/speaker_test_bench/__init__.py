@@ -14,9 +14,7 @@ Using any of these subpackages requires an explicit import.
 Here is the subpackages list::
 
  data           --- TBD
- features       --- TBD
- model          --- TBD
- visualization  --- TBD
+ 
 
 Utility tools
 -------------
